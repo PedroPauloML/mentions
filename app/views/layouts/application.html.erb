@@ -5,11 +5,20 @@
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
-    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag 'application', media: 'all' %>
+    <%= javascript_pack_tag 'application' %>
   </head>
 
   <body>
+    <header>
+      <h1>MENTIONS</h1>
+
+      <ul>
+        <li><%= link_to("Users", users_path) %></li>
+        <li><%= link_to("Posts", posts_path) %></li>
+        <li><%= link_to("Mentions", mentions_path) %></li>
+      </ul>
+    </header>
     <%= yield %>
   </body>
 </html>

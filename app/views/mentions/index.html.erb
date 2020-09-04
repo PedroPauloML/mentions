@@ -1,0 +1,19 @@
+<h1>Mentions</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Mention</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @mentions.each do |mention| %>
+      <tr>
+        <td><%= mention.to_text %></td>
+        <td><%= link_to 'Show', eval("#{mention.mentioner_type.constantize.to_s.downcase + "_path"}(#{mention.mentioner_id})") %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>

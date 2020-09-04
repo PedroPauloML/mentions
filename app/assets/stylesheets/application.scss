@@ -13,3 +13,24 @@
  *= require_tree .
  *= require_self
  */
+
+@import "tributejs/dist/tribute";
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 30px;
+
+  ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+
+    li a {
+      font-size: 24px;
+      padding: 10px;
+      color: #000;
+    }
+  }
+}

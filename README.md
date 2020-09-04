@@ -1,24 +1,18 @@
-# README
+# Mentions
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This project simulates the action of mentioning an user in posts/comments.
 
-Things you may want to cover:
+For this, I used the library [zurb/tribute](https://github.com/zurb/tribute).
 
-* Ruby version
+## Prerequisites
 
-* System dependencies
+- Ruby `2.7.1`;
+- Rails `6.0.3`;
 
-* Configuration
+## Getting started
 
-* Database creation
+Install dependencies running `bundle instal` and `yarn install` or `npm install`.
 
-* Database initialization
+Create database and apply migrations running `rails db:create db:migrate`.
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+And run server with `rails s`.
